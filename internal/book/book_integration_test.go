@@ -11,5 +11,4 @@ type BookTestSuite struct {
 
 func (suite *BookTestSuite) SetupSuite() {
 	suite.app = transport.Setup()
-
 }
