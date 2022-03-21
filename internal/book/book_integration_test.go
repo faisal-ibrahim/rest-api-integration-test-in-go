@@ -31,7 +31,7 @@ func (suite *BookTestSuite) SetupSuite() {
 func (suite *BookTestSuite) TearDownSuite() {
 	err := os.Remove("books.db")
 	if err != nil {
-		panic("Failed to remove database")
+
 	}
 }
 
