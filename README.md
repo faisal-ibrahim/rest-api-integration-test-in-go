@@ -1,1 +1,1 @@
-# rest-api-integration-test-in-go
+# Rest-api-integration-test-in-go
