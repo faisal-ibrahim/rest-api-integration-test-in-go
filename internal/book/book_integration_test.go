@@ -49,6 +49,10 @@ func (suite *BookTestSuite) TestCreateBook() {
 
 	assert.NoError(suite.T(), err)
 	assert.Equal(suite.T(), http.StatusOK, res.StatusCode)
+
+	var bookTest book.Book
+	database.DBConn.Where("title = ?", "Test Book").First(&bookTest)
+	assert.Equal(suite.T(), bookTest.Title, "Test Book")
 }
 
 func TestBookTestSuite(t *testing.T) {
